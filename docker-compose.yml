@@ -1,0 +1,19 @@
+version: '3.1'
+
+services:
+
+  postgres:
+    image: postgres
+    container_name: postgres_message
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: messages_rest
+    volumes:
+      - ./postgres:/var/lib/postgresql/data/
+    ports:
+      - 5433:5433
+
+volumes:
+  postgres_data:
+    driver: local
