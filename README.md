@@ -2,7 +2,8 @@
 
 or - `docker-compose up`
 
-# Before start check, you should start server PostgreSQL, change ConnectSettings in file db.go
+- `go run main.go`
+# Before start check, you should start server PostgreSQL and change ConnectSettings in file db.go
 
 check notSupported method - `curl localhost:8010/`
 
