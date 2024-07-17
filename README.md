@@ -1,6 +1,11 @@
 # CURL Commands to test how to works website
 
+or - `docker-compose up`
+
+# Before start check, you should start server PostgreSQL, change ConnectSettings in file db.go
+
 check notSupported method - `curl localhost:8010/`
+
 check notSupport method  - `curl localhost:8010/doesNotExist`
 
 check GET method /getall without options - `curl -s -X PUT -H 'Content-Type: application/json' localhost:8010/getall`
