@@ -1,8 +1,10 @@
+# TASK: https://docs.google.com/document/d/13JHrzO9HuExWe_X0WrJzD8TPk3UHyTowUHCJHA5RFuY/edit?usp=sharing
+
 # CURL Commands to test how to works website
 
 or - `docker-compose up`
 
-- `go run main.go`
+BEGIN - `go run main.go`
 # Before start check, you should start server PostgreSQL and change ConnectSettings in file db.go
 
 check notSupported method - `curl localhost:8010/`
