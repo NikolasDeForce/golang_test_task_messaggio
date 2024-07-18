@@ -7,7 +7,7 @@ import (
 
 func TestDB(t *testing.T) {
 	var message = db.Message{ID: 0, Text: "hello everybody"}
-	t.Run("check InsertMessage, should return message already exist", func(t *testing.T) {
+	t.Run("check InsertMessage to add new message 'hello everybody'", func(t *testing.T) {
 		dbase := db.ConnectPostgres()
 		defer dbase.Close()
 
@@ -19,7 +19,7 @@ func TestDB(t *testing.T) {
 		}
 	})
 
-	t.Run("Check listAll", func(t *testing.T) {
+	t.Run("сheck listAll", func(t *testing.T) {
 		dbase := db.ConnectPostgres()
 		defer dbase.Close()
 
@@ -38,7 +38,7 @@ func TestDB(t *testing.T) {
 		}
 	})
 
-	t.Run("check deleteMessage to text 'hello everybody'", func(t *testing.T) {
+	t.Run("check deleteMessage to message 'hello everybody'", func(t *testing.T) {
 		dbase := db.ConnectPostgres()
 		defer dbase.Close()
 
