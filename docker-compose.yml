@@ -7,12 +7,12 @@ services:
     container_name: postgres_message
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: 123
+      POSTGRES_PASSWORD: postgres
       POSTGRES_DB: messages_rest
     volumes:
       - ./postgres:/var/lib/postgresql/data/
     ports:
-      - 5433:5433
+      - 5432:5432
 
 volumes:
   postgres_data:

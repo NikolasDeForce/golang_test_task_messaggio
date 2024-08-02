@@ -30,9 +30,9 @@ func (m *Message) ToJSON(w io.Writer) error {
 // PostgreSQL connection details
 var (
 	Hostname = "localhost"
-	Port     = 5433
+	Port     = 5432
 	Username = "postgres"
-	Password = "123"
+	Password = "postgres"
 	Database = "messages_rest"
 )
 
